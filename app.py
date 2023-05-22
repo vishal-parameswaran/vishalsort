@@ -84,7 +84,7 @@ lock = threading.Lock()
 predictions = {}
 
 
-bmi_model = load_model("best_model_vgg_complex.h5",compile=False)
+bmi_model = load_model("best_model_vgg_complex_100.h5",compile=False)
 sentiment_model = load_model("sentiment_standard.h5",compile=False)
 
 cache_key = "object_detection_dnn"
