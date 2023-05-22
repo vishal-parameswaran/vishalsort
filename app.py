@@ -160,7 +160,7 @@ def detect_face(frame,bboxes):
     # cv2.rectangle(frame, ((startX), int(startY)), ((endX), int(endY)), (255, 255, 255), 2)
     face_crop = np.copy(frame[startY:endY,startX:endX])
     face_gray = np.copy(gray_frame[startY:endY,startX:endX])
-    face_crop,face_gray = pre_process_image(face_crop,face_gray,size=200)
+    face_crop,face_gray = pre_process_image(face_crop,face_gray,size=100)
     faces.append(face_crop)
     face_grays.append(face_gray)
     faces = np.array(faces, dtype="float32")
